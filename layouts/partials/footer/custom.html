@@ -1,7 +1,7 @@
 {{- $ThemeVersion := "3.30.0" -}}
 <footer class="site-footer">
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'}});</script>
+    <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
     <section class="copyright">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
